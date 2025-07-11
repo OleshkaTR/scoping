@@ -1,12 +1,14 @@
-import './App.css'
-import { FundingDecentralizedAIIntro } from './components/FundingDecentralizedAIIntro.tsx';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+
 import { CrowdsourcedAIIntro } from './components/CrowdsourcedAIIntro.tsx';
 import { Leaderboard } from './components/leaderboard/Leaderboard.tsx';
 import { AIEcosystem } from './components/AIEcosystem.tsx';
 import { CompetitionInfo } from './components/CompetitionInfo.tsx';
 import { CompanyInfo } from './components/CompanyInfo.tsx';
+import { FundingDecentralizedAIIntro } from './components/FundingDecentralizedAIIntro.tsx';
+
+import './App.css'
 
 const imageTopCoordinateMap: Record<number, string> = {
   0: '66px',
@@ -85,7 +87,7 @@ function App() {
       className="relative h-screen overflow-hidden pt-8"
       onWheel={showButtons ? handleSliderScroll : handleInitialScroll}
     >
-      <img src="/planet.svg" className="w-[1000px] h-[1000px] duration-500 object-cover z-0 absolute right-0 transition-all" alt="planet" style={{ top: imageTopCoordinateMap[currentSlide] }} />
+      <img src="/planet.svg" className="duration-500 object-cover z-0 absolute right-0 transition-all" alt="planet" style={{ top: imageTopCoordinateMap[currentSlide] }} />
 
       <motion.div
         className="h-full w-full"
@@ -101,6 +103,17 @@ function App() {
           </section>
         ))}
       </motion.div>
+
+      {currentSlide === 2 && (
+        <motion.img
+          src="/comet.svg"
+          alt="Moving Image"
+          className="absolute top-0 left-0"
+          initial={{ x: 0, y: 0 }}
+          animate={{ x: '100vw', y: '100vh' }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        />
+      )}
     </div>
   );
 }

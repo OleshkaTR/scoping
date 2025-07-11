@@ -1,4 +1,3 @@
-
 export const CompanyInfo = () => (
   <div className="flex h-full w-full">
     <div className="px-20 flex flex-col justify-end h-[552px] w-full mt-auto gap-[27px] pb-[120px] bg-[url('/earth_background.svg')] bg-cover bg-center">

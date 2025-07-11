@@ -1,5 +1,6 @@
 import { Button } from '../ui-kit';
 import { Badge } from '../ui-kit/Badge.tsx';
+
 import { motion } from 'framer-motion';
 
 type Props = {
