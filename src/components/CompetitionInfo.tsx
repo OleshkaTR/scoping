@@ -1,7 +1,7 @@
 import { Button } from '../ui-kit';
 
 export const CompetitionInfo = () => (
-  <div className="flex w-full h-full items-center justify-between max-2xl:p-[170px] min-2xl:p-[220px]">
+  <div className="flex w-full h-full items-center justify-between max-3xl:p-[170px] 3xl:p-[220px]">
     <div className="flex flex-col gap-8 flex-1">
       <p className="text-[48px] font-medium">Text Here</p>
 

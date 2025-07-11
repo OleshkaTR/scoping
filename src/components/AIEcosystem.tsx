@@ -40,7 +40,7 @@ export const AIEcosystem = ({ isSlideInFocus }: Props) => {
 
       <div className="relative w-full overflow-hidden">
         <motion.div
-          className="flex w-full items-center justify-between gap-8 px-20"
+          className="flex w-full items-center justify-between px-20"
           animate={isAnimating ? { x: '-100px' } : { x: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
         >

@@ -20,7 +20,7 @@ export const FundingDecentralizedAIIntro = ({ showButtons }: Props) => (
     </div>
 
     <div className="relative flex flex-col gap-9 mt-[80px]">
-      <h1 className="leading-none max-2xl:text-[84px] min-2xl:text-[128px] font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#963488] via-[#FC6F32] to-[#FF4A59]">
+      <h1 className="leading-none max-3xl:text-[64px] 3xl:text-[128px] font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#963488] via-[#FC6F32] to-[#FF4A59]">
         A new economic primitive for funding decentralized AI
       </h1>
 
