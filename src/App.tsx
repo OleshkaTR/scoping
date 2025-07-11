@@ -69,7 +69,7 @@ function App() {
     },
     {
       id: 4,
-      content: <AIEcosystem />
+      content: <AIEcosystem isSlideInFocus={currentSlide === 3} />
     },
     {
       id: 5,
