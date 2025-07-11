@@ -9,12 +9,14 @@ type Props = PropsWithChildren<{
 
 export const Button = ({ size = 'large', variant = 'primary', className, children }: Props) => {
   return (
-    <button className={cn('flex rounded-full font-medium transition-colors text-white items-center justify-center',
-      size === 'large' ? 'h-[75px] px-12 text-2xl' : 'px-8 h-[52px] text-lg',
-      variant === 'primary' && 'hover:bg-[linear-gradient(106.2deg,_#963488_-12.33%,_#FC6F32_50.28%,_#FF4A59_114.17%)] border-2 border-solid border-[linear-gradient(106.2deg,_#963488_-12.33%,_#FC6F32_50.28%,_#FF4A59_114.17%)]',
-      variant === 'secondary' && 'hover:text-[linear-gradient(106.2deg,_#963488_-12.33%,_#FC6F32_50.28%,_#FF4A59_114.17%)]',
-      className
-    )}>
+    <button
+      className={cn('w-fit flex rounded-full font-medium transition-colors text-white items-center justify-center',
+        size === 'large' ? 'h-[75px] px-12 text-2xl' : 'px-6 h-[52px] text-lg',
+        variant === 'primary' && 'border-2 border-solid border-[#FC6F32] hover:bg-[linear-gradient(106.2deg,_#963488_-12.33%,_#FC6F32_50.28%,_#FF4A59_114.17%)]',
+        variant === 'secondary' && 'hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#963488] hover:via-[#FC6F32] hover:to-[#FF4A59] transition-colors duration-300',
+        className
+      )}
+    >
       {children}
     </button>
   );
